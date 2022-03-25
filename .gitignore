@@ -1,6 +1,6 @@
 # Prerequisites
 *.d
-/.vs
+*.vs
 
 # Compiled Object files
 *.slo
@@ -31,3 +31,12 @@
 *.exe
 *.out
 *.app
+
+*.db
+Browse.VC*
+*.tlog
+*.suo
+*.log
+*.iobj
+*.recipe
+*.txt
