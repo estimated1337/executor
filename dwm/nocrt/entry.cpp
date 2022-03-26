@@ -152,6 +152,7 @@ enum e_gametype
 struct mmap_data_t
 {
 	uint64_t m_address;
+	uint64_t m_size;
 	uint64_t m_entrypoint;
 	uint64_t m_gametype;
 };
@@ -185,8 +186,8 @@ void entry(mmap_data_t* mmap_data)
 
 		auto current_proc_id = LI_FN(GetCurrentProcessId).get()();
 
-		driver.expose_mem_to_process(current_proc_id, mmap_data->m_address, 0x100000);
-		driver.expose_mem_to_process(process_id, mmap_data->m_address, 0x100000);
+		driver.expose_mem_to_process(current_proc_id, mmap_data->m_address, mmap_data->m_size);
+		driver.expose_mem_to_process(process_id, mmap_data->m_address, mmap_data->m_size);
 
 		BYTE remote_call_dll_main[92] =
 		{
