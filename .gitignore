@@ -11,6 +11,8 @@
 # Precompiled Headers
 *.gch
 *.pch
+*.pdb
+*.ipdb
 
 # Compiled Dynamic libraries
 *.so
