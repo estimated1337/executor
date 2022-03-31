@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="entry.cpp" />
+    <ClCompile Include="utils\phymem\phymem.cpp" />
+    <ClCompile Include="utils\service\service.cpp" />
+    <ClCompile Include="utils\io\io.cpp" />
+    <ClCompile Include="utils\kernel\kernel.cpp" />
+    <ClCompile Include="utils\util\util.cpp" />
+    <ClCompile Include="bootstrap\bootstrap.cpp" />
+    <ClCompile Include="executor\executor.cpp" />
+    <ClCompile Include="driver\driver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.hpp" />
+    <ClInclude Include="utils\misc\shared.hpp" />
+    <ClInclude Include="utils\misc\oxorany.hpp" />
+    <ClInclude Include="utils\misc\lazy_importer.hpp" />
+    <ClInclude Include="utils\phymem\phymem.hpp" />
+    <ClInclude Include="utils\misc\singleton.hpp" />
+    <ClInclude Include="utils\service\service.hpp" />
+    <ClInclude Include="utils\io\io.hpp" />
+    <ClInclude Include="utils\kernel\kernel.hpp" />
+    <ClInclude Include="resources\phymemx.hpp" />
+    <ClInclude Include="utils\util\util.hpp" />
+    <ClInclude Include="bootstrap\bootstrap.hpp" />
+    <ClInclude Include="utils\misc\shellcode.hpp" />
+    <ClInclude Include="executor\executor.hpp" />
+    <ClInclude Include="driver\driver.hpp" />
+  </ItemGroup>
+</Project>
