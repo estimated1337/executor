@@ -11,8 +11,6 @@
 # Precompiled Headers
 *.gch
 *.pch
-*.pdb
-*.ipdb
 
 # Compiled Dynamic libraries
 *.so
@@ -42,3 +40,5 @@ Browse.VC*
 *.iobj
 *.recipe
 *.txt
+*.pdb
+*.ipdb
